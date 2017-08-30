@@ -8,8 +8,10 @@
   <title>saiki.github.io</title>
   <meta property="og:title" content="saiki.github.io" />
   <meta name="twitter:title" content="saiki.github.io" />
-  <meta name="author" content=""/>
+  <meta name="author" content="saiki"/>
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@a_saiki" />
+  <meta name="twitter:creator" content="@a_saiki" />
   <meta property="og:url" content="https://saiki.github.io/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="saiki.github.io" />
@@ -101,6 +103,18 @@ ga('send', 'pageview');
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
         
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
 
         
 
@@ -158,6 +172,100 @@ ga('send', 'pageview');
         <div class="posts-list">
           
           
+            <article class="post-preview">
+              <a href="https://saiki.github.io/post/hugo_github_pages/">
+                <h2 class="post-title">Hugoを使ってGihub Pagesにブログを作成する手順</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  Posted on August 23, 2017
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  
+
+<h2 id="参考url">参考URL</h2>
+
+<ul>
+<li>基本的に下記のURLの通り
+
+<ul>
+<li>(<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#host-github-user-or-organization-pages">https://gohugo.io/hosting-and-deployment/hosting-on-github/#host-github-user-or-organization-pages</a>)</li>
+<li>(<a href="https://gohugo.io/getting-started/quick-start/">https://gohugo.io/getting-started/quick-start/</a>)</li>
+</ul></li>
+</ul>
+
+<h2 id="リポジトリを作成">リポジトリを作成</h2>
+
+<ul>
+<li>表示用とコンテンツ用の2つを作成
+
+<ul>
+<li>&lt;username&gt;.github.io リポジトリ</li>
+<li>コンテンツ用のディレクトリ
+
+<ul>
+<li>i.e. blog</li>
+<li>README.mdは生成しなかった</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="サイトを生成">サイトを生成</h2>
+
+<ul>
+<li><p>&lt;username&gt;.github.ioという名前でサイトをせいせい</p>
+
+<pre><code class="language-bash">hugo new site &lt;username&gt;.github.io
+</code></pre></li>
+
+<li><p>Gitリポジトリとして初期化</p>
+
+<pre><code class="language-bash">git init
+</code></pre></li>
+
+<li><p>コンテンツ用リポジトリをリモートに追加</p>
+
+<pre><code class="language-bash">git remote add origin https://github.com/&lt;username&gt;/blog
+</code></pre></li>
+
+<li><p>&lt;username&gt;.github.io を public ディレクトリのsubmoduleとする</p>
+
+<pre><code class="language-bash">git submodule add -b master git@github.com:&lt;USERNAME&gt;/&lt;USERNAME&gt;.github.io.git public
+</code></pre></li>
+
+<li><p>参考URLのdeploy.shを作成</p></li>
+</ul>
+
+<h2 id="テーマの登録">テーマの登録</h2>
+
+<ul>
+<li><p>cloneしている記事が多いがQuick Startではsubmoduleとしているのでそのようにする</p>
+
+<pre><code class="language-bash">git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+</code></pre></li>
+
+<li><p>後はQuick Startのように記事を追加したりすればOK</p></li>
+</ul>
+
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://saiki.github.io/tags/hugo/">hugo</a>&nbsp;
+                
+                  #<a href="https://saiki.github.io/tags/github-pages/">github pages</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
         </div>
 
         
@@ -171,13 +279,33 @@ ga('send', 'pageview');
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
           
+              <li>
+                <a href="https://github.com/saiki" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/a_saiki" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
           
         </ul>
         <p class="credits copyright text-muted">
           
+            
+              saiki
+                      
+          
           
           &nbsp;&bull;&nbsp;
-          0001
+          2017
 
           
             &nbsp;&bull;&nbsp;
