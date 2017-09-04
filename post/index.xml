@@ -17,7 +17,7 @@
       <pubDate>Mon, 04 Sep 2017 22:42:57 +0900</pubDate>
       
       <guid>https://saiki.github.io/post/iterm_npm_progress_bar_problem/</guid>
-      <description> プログレスバー自体を表示しない  npm set progress=false yarn &amp;ndash;no-progress  iTerm2の設定を帰る  Preferences -&amp;gt; Profiles -&amp;gt; Textタブ  Treat ambiguous-width characters as double width (not recommended) のチェックをはずす   </description>
+      <description> プログレスバー自体を表示しない  npm set progress=false yarn &amp;ndash;no-progress  iTerm2の設定を変える  Preferences -&amp;gt; Profiles -&amp;gt; Textタブ  Treat ambiguous-width characters as double width (not recommended) のチェックをはずす   </description>
     </item>
     
     <item>
