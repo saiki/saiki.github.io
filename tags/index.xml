@@ -29,5 +29,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Item2</title>
+      <link>https://saiki.github.io/tags/item2/</link>
+      <pubDate>Mon, 04 Sep 2017 22:42:57 +0900</pubDate>
+      
+      <guid>https://saiki.github.io/tags/item2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Npm</title>
+      <link>https://saiki.github.io/tags/npm/</link>
+      <pubDate>Mon, 04 Sep 2017 22:42:57 +0900</pubDate>
+      
+      <guid>https://saiki.github.io/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yarn</title>
+      <link>https://saiki.github.io/tags/yarn/</link>
+      <pubDate>Mon, 04 Sep 2017 22:42:57 +0900</pubDate>
+      
+      <guid>https://saiki.github.io/tags/yarn/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
